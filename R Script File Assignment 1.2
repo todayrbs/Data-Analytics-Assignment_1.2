@@ -1,0 +1,14 @@
+setwd("C:/users/today/OneDrive/Desktop/Excel Files")
+library(readxl)
+read_xls(C:/users/today/OneDrive/Desktop/Excel Files, sheet = Sheet 1, 
+         range = 1, col_names = TRUE, col_types = NULL, na = "", trimws= TRUE,skip=0, n_max = Inf, guess_max =min(1000,n_max) 
+         
+         files=list.files(pattern=".csv")
+         
+         for(i in 1:length(files))
+         {
+           filename=files[i]
+           data=read.csv(file = filename,header = T)
+           assign(x = filename,value = data)
+         }         
+View(files)         
